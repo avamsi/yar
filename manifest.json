@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Yet Another Redirector",
+    "version": "0.0.1",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "options_page": "options.html",
+    "permissions": [
+      "<all_urls>",
+      "storage",
+      "webRequest",
+      "webRequestBlocking"
+    ]
+}
