@@ -2,7 +2,12 @@
 
 ## Options
 
-There's no pretty UI yet, just a "file" of lines (which'll be saved automatically), of the format `old_prefix > replacement_prefix`  
+There's no pretty UI yet, just a "file" of lines (which'll be saved automatically), of the format --
+
+```
+old_prefix > replacement_prefix
+```
+
 Here's an example config --
 
 ```
