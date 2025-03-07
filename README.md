@@ -5,7 +5,7 @@
 There's no pretty UI yet, just a "file" of lines (which'll be saved automatically), of the format --
 
 ```
-old_prefix > replacement_prefix
+old prefix > new prefix
 ```
 
 Here's an example config --
