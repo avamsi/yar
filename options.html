@@ -10,12 +10,20 @@
       }
 
       #rules {
+        background-color: white;
         display: inline-block;
         font-size: 15px;
         height: 100vh;
         overflow: auto;
         padding: 1vh;
+        transition: background-color 0.5s;
         width: 100vw;
+      }
+      #rules.dirty {
+        background-color: #ffeeee;
+      }
+      #rules.saved {
+        background-color: #eeffee;
       }
     </style>
   </head>

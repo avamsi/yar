@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-new MutationObserver(() => {
-  chrome.storage.sync.set({ rules: rulesEl.innerText }, () => {});
-}).observe(rulesEl, { subtree: true, characterData: true });
+rulesEl.addEventListener("input", () => {
+  rulesEl.classList.add("dirty");
+  chrome.storage.sync.set({ rules: rulesEl.innerText }, () => {
+    rulesEl.classList.remove("dirty");
+    rulesEl.classList.add("saved");
+    setTimeout(() => {
+      rulesEl.classList.remove("saved");
+    }, 500);
+  });
+});
